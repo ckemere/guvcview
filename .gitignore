@@ -9,22 +9,35 @@ build-*
 *.swp
 *.tmp
 
-# dumps #
-#########
-# *.stackdump
-
-# Logs and databases #
-######################
-# *.log
-# *.sql
-# *.sqlite
-
 # OS generated files #
 ######################
 .DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# PKGCONFIG files
+pkgconfig/*.pc
+
+POTFILES
+# Translations?
+*.gmo
+stamp-it
+
+# Directories
+.deps/
+.libs/
+
+# Binary
+data/guvcview
+data/guvcview.appdata.xml
+data/guvcview.appdata.xml.in
+data/guvcview.desktop
+data/guvcview.desktop.in
+data/guvcview.in
+guvcview/guvcview
+
+libtool
 
 
 ### Github Autotools .gitignore
@@ -55,6 +68,10 @@ autom4te.cache
 /install-sh
 /missing
 /stamp-h1
+
+## - new
+/config.cache
+/config.h
 
 # https://www.gnu.org/software/libtool/
 
@@ -132,4 +149,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
 
