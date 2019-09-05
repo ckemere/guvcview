@@ -1,5 +1,7 @@
-GTK UVC VIEWER (guvcview)
-*************************
+#GTK UVC VIEWER (guvcview)
+#*************************
+
+# Originally forked from [https://git.code.sf.net/p/guvcview/git-master]
 
 Basic Configuration
 ===================
