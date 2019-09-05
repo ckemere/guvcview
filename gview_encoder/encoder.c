@@ -1132,7 +1132,7 @@ int encoder_add_video_frame(uint8_t *frame, int size, int64_t timestamp, int isK
 			printf("ENCODER: ref ts = %" PRId64 "\n", timestamp);
 	}
 
-	int64_t pts = timestamp - reference_pts;
+	int64_t pts = timestamp;
 
 	__LOCK_MUTEX( __PMUTEX );
 	int flag = video_ring_buffer[video_write_index].flag;
