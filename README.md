@@ -1,6 +1,15 @@
 #GTK UVC VIEWER (guvcview)
 #*************************
 
+### Needed to install
+sudo apt install autotools-dev autoconf intltool libtool libglib2.0-dev libudev-dev libusb-1.0-0-dev libv4l-dev libpng-dev libsdl2-dev libgtk-3-dev libgsl-dev portaudio19-dev
+
+### Once we install
+If we use the default `/usr/local` prefix, we need to add `/usr/local/lib` to the
+library search path. To make this permanent, the easiest thing is to create a file 
+`/etc/ld.so.conf.d/usr-local.conf` (the exact name doesn't matter) containing
+the line `/usr/local/lib`. Then run `sudo ldconfig`. 
+
 # Originally forked from [https://git.code.sf.net/p/guvcview/git-master]
 
 Basic Configuration
